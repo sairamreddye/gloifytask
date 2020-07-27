@@ -1,0 +1,60 @@
+<div class="col-lg-12 text-center mt-5">
+  </div>
+  <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="col-md-4 offset-md-4 mt-5 border border-success pt-3">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search ......" aria-label="Recipient's username" formControlName="search">
+    <div class="input-group-append">
+        <button type='submit'>
+            <span class="input-group-text">
+                <i class="fa fa-search"></i>
+            </span>
+        </button>
+    </div>
+    </div>
+    <span class="text-danger" *ngIf="(registerFormControl.search.touched || submitted) && registerFormControl.search.errors?.required">
+        Name is required </span>
+  </div>
+</form>
+
+<!-- <app-tweets [dataContains]='dataValidation' [tweets]='searchedData'></app-tweets> -->
+
+<ng-container *ngIf="dataValidation; else nodataContains">
+    <div class="col-md-4 offset-md-4 mt-5 ">
+            <div class="card card-custom" *ngFor="let tweetsData of searchedData">
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td *ngIf="tweetsData.name"> <p class='profile-name'>{{tweetsData.name}}</p></td>
+                            <td *ngIf="tweetsData.aliasname"><span class='alias-name'>@{{tweetsData.aliasname}}</span></td>
+                        </tr>
+                    </table>
+                    <p class="card-text" *ngIf="tweetsData.tweetstory">{{tweetsData.tweetstory}}</p>      
+                    <img *ngIf="tweetsData.image" src="{{tweetsData.image}}" class="card-img-top" alt="...">
+                </div>
+                  <div class="container" *ngIf="tweetsData.tweetstory">   
+                    <ul class='icons-adjust'>
+                      <li><a href="JavaScript:void(0)" class="common comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                      <li><a href="JavaScript:void(0)" class="common retweet"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                      <li><a href="JavaScript:void(0)" class="common heart"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                      <li><a href="JavaScript:void(0)" class="common upload"><i class="fa fa-upload" aria-hidden="true"></i></a></li>
+                  </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="container col-md-4 offset-md-5">
+            <button class="show-more center" (click)="getData()" [disabled]="isshowmoreDisable">
+                Show more
+              </button>
+            </div>
+            </ng-container>
+    
+    <ng-template #nodataContains>
+        <div class="col-md-4 offset-md-4 mt-5 ">
+            <div class="card card-custom">
+                <div class="card-body">
+                    <h5 class="card-title custom">{{error}}</h5>
+                </div>
+            </div>
+        </div>
+    </ng-template>

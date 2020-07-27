@@ -1,0 +1,37 @@
+.card.card-custom img {
+    height: 136px;
+}
+.card.card-custom{
+    border-radius:0px;
+}
+span.alias-name {
+    margin-top: -20px;
+    font-size: 15px;
+    position: absolute;
+}
+p.profile-name {
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .align{
+      margin-right: 25px;
+  } */
+  .col-sm.icons-adjust {
+    width: 166px;
+    text-align: center;
+}
+.card.card-custom:hover {
+    background-color: #F5F8FA;
+}
+/* .col-sm.icons-adjust i{
+    width: 35px;
+    height: 35px;
+}
+.col-sm.icons-adjust:hover {
+     color: #1DA1F2;
+     background-color: #DFEFFA;
+     border-radius: 50%;
+} */

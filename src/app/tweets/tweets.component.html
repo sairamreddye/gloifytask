@@ -1,0 +1,105 @@
+
+ <!-- <ng-container *ngIf="dataContains; else nodataContains">
+<div class="col-md-4 offset-md-4 mt-5 ">
+        <div class="card card-custom" *ngFor="let tweetsData of tweets">
+            <div class="card-body">
+              <h5 class="card-title">{{tweetsData.company}}</h5> <span>@aliasname</span>
+                <img src="http://i63.tinypic.com/op3eb5.png" class="card-img-top" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+        </div>
+</ng-container> -->
+
+
+<!-- <ng-template #nodataContains>
+    <div class="col-md-4 offset-md-4 mt-5 ">
+        <div class="card card-custom">
+            <div class="card-body">
+                <h5 class="card-title">NO TWEETS AVAILABLE SEARCH FOR TWEETS</h5>
+            </div>
+        </div>
+    </div>
+</ng-template> -->
+
+<ng-container *ngIf="dataContains; else nodataContains">
+<div class="col-md-4 offset-md-4 mt-5 ">
+        <div class="card card-custom" *ngFor="let tweetsData of tweets">
+            <div class="card-body">
+                <table>
+                    <tr>
+                        <td> <p class='profile-name'>{{tweetsData.company}}</p></td>
+                        <td><span class='alias-name'>@aliasname</span></td>
+                    </tr>
+                </table>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit</p>      
+                <img src="http://i63.tinypic.com/op3eb5.png" class="card-img-top" alt="...">
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm icons-adjust">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-sm icons-adjust">
+                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-sm icons-adjust">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-sm icons-adjust">
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <button class="show-more" (click)="getData()" [disabled]="counter>=data.length">
+            Show more
+          </button>
+        </ng-container>
+
+<ng-template #nodataContains>
+    <div class="col-md-4 offset-md-4 mt-5 ">
+        <div class="card card-custom">
+            <div class="card-body">
+                <h5 class="card-title">NO TWEETS AVAILABLE SEARCH FOR TWEETS</h5>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- <p>{{dataContains}}</p> -->
+    <!-- <div class="card-columns"> -->
+<!-- <div> -->
+     <!-- </div> -->
+        <!-- </div> -->

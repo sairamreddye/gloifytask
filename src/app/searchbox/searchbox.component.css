@@ -1,0 +1,102 @@
+.card.card-custom img {
+    height: 136px;
+    border-radius: 25px;
+}
+.card.card-custom{
+    border-radius:0px;
+}
+span.alias-name {
+    margin-top: -19px;
+    margin-left: 4px;
+    font-size: 15px;
+    position: absolute;
+}
+p.profile-name {
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .align{
+      margin-right: 25px;
+  } */
+  /* .col-sm.icons-adjust {
+    width: 166px;
+    text-align: center;
+} */
+.card.card-custom:hover {
+    background-color: #F5F8FA;
+}
+/* .col-sm.icons-adjust i{
+    width: 35px;
+    height: 35px;
+}
+.col-sm.icons-adjust:hover {
+     color: #1DA1F2;
+     background-color: #DFEFFA;
+     border-radius: 50%;
+} */
+button.show-more.center {
+    margin-left: 55px;
+    /* padding-top: 15px; */
+    margin-top: 21px;
+}
+
+
+/* .container .box { 
+    width: 925px;
+} 
+.container .box .box-cell { 
+    display: table-cell;
+    width: 35%;
+    padding: 10px;
+} 
+.container .box .box-cell.box1 { 
+    text-align:justify; 
+ } */
+
+ ul.icons-adjust {
+    list-style: none;
+    text-align: center;
+    margin-left: -22px;
+    margin-bottom: 0px;
+  }
+   ul.icons-adjust li {
+    display: inline-block;
+    padding-left: 50px;
+  }
+   ul.icons-adjust li a {
+        color: black;
+        display: table-cell;
+        vertical-align: middle; 
+        text-align: center;
+        text-decoration: none;
+         width:40px;
+          height:40px;   
+        font-size:15px;
+  }
+  a.common:hover, a.common:active{
+    border-radius: 50%;
+  }
+        a.comment:hover, a.comment:active {
+            color: #28A6F2 !important;
+          background-color:#DFEFFA;
+        }
+        
+        a.retweet:hover, a.retweet:active{
+            color: #23C26B !important;
+           background-color: #DEF2EB;
+        }
+        a.heart:hover, a.heart:active{
+            color: #E55381 !important;
+           background-color: #F3E3EB;
+        }
+        a.upload:hover, a.upload:active{
+            color: #4DB4F4 !important;
+           background-color: #DFEFFA;
+        }
+
+        h5.card-title.custom{
+            color: #28A6F2 !important;
+        }
