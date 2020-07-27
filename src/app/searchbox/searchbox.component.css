@@ -111,7 +111,7 @@ button.show-more.center {
         }
         @media only screen and (max-width : 768px) {
             ul.icons-adjust li {
-                padding-left: 0px;
+                padding-left: 45px;
               }   
         }
         /* @media only screen and (max-width : 1320px) {
