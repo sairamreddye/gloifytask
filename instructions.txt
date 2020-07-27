@@ -1,0 +1,23 @@
+step 1: pull the master once into local system
+
+step 2: after pulling the master once enter into project folder and please run the following commands.
+
+   command - 'npm install' - to install node_modules.
+
+   after sucessful install node_modules run follwing command.
+
+   command - 'npm start' - to run the project in your local machine
+
+   finally go to browser and run project in 'http://localhost:4200/search'
+
+   and finally search for the data only that you can see.
+
+    1.bike
+    2.car
+    3.plane
+
+    because i have given only that data in api call.
+
+    and find the link with attchaments that is live page.
+
+ 
