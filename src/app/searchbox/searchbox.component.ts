@@ -42,7 +42,7 @@ export class SearchboxComponent implements OnInit {
       this.searchedData = [];
       this.isshowmoreDisable = true;
       this.counter = 0;
-      const userEntered = this.registerForm.value.search.trim();
+      const userEntered = this.registerForm.value.search.trim().toLowerCase();
       this.marvelHeroes = this.tweetsData.filter((hero) => {
         return hero.TweetSearchName == userEntered;
       });

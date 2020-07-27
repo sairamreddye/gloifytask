@@ -100,3 +100,24 @@ button.show-more.center {
         h5.card-title.custom{
             color: #28A6F2 !important;
         }
+
+        @media only screen and (max-width : 1024px) {
+            ul.icons-adjust li {
+                padding-left: 15px;
+              }   
+              ul.icons-adjust{
+                margin-left: -18px;
+              }
+        }
+        @media only screen and (max-width : 768px) {
+            ul.icons-adjust li {
+                padding-left: 0px;
+              }   
+        }
+        /* @media only screen and (max-width : 1320px) {
+            ul.icons-adjust li {
+                padding-left: 25px;
+              }   
+              
+        } */
+        
